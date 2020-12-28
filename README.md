@@ -40,7 +40,7 @@ The result is:
    1    2    1 
 ```
 
-The speed difference becomes apparent for large vectors:
+The speed difference between `string_table` and base R `table` becomes apparent for large vectors:
 
 ```R
 # make large character vector
