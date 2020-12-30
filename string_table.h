@@ -1,13 +1,12 @@
-#include <Rcpp.h>
+//File: string_table.h
+#ifndef STRING_TABLE_H
+#define STRING_TABLE_H
+
 #include <algorithm>
 #include <boost/sort/spreadsort/spreadsort.hpp>
 #include <string>
 #include <vector>
 
-using namespace Rcpp;
-
-// [[Rcpp::plugins(cpp11)]]
-// [[Rcpp::export]]
 
 std::map<std::string, int> string_table( std::vector<std::string> x )
 {
@@ -45,3 +44,5 @@ std::map<std::string, int> string_table( std::vector<std::string> x )
     return output;
 
 }
+
+#endif
